@@ -8,8 +8,8 @@ NC='\033[0m'
 echo -e "${CYAN}🚀 เริ่มต้นการติดตั้ง OpenClaw: Perfect Edition (Android/Termux)${NC}"
 
 # 1. ติดตั้ง Packages ที่จำเป็น
-echo -e "${GREEN}[1/4] กำลังติดตั้งเครื่องมือระบบ (FFmpeg, Chromium, Python)...${NC}"
-pkg update -y && pkg install -y git python ffmpeg tur-repo
+echo -e "${GREEN}[1/4] กำลังติดตั้งเครื่องมือระบบ (FFmpeg, Chromium, Python, Unzip)...${NC}"
+pkg update -y && pkg install -y git python ffmpeg tur-repo unzip zip
 pkg install -y chromium xvfb
 
 # 2. แก้ไข Network Shim (แก้บั๊ก Android Error 13)
